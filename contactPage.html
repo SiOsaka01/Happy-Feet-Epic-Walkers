@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- <link href="frag.css" rel="stylesheet"> -->
+    <link href="newFrag1.css" rel="stylesheet">
+    <script type="text/javascript">
+        function setIframeSource() {
+    var theSelect = document.getElementById('location');
+    var theIframe = document.getElementById('myIframe');
+    var theUrl;
+  
+    theUrl = theSelect.options[theSelect.selectedIndex].value;
+    theIframe.src = theUrl;
+ }
+
+function showDetails(){
+    const bt=document.getElementById("bt1").style.height;
+    alert(bt);
+ }
+
+function showMapper(){
+        var mapp=document.getElementById("latlongmape");
+        alert("This function is under Development! Sorry, buy a map and compass!");
+}
+
+function boom(){
+    alert("Thank you see you on Sunday.");
+}
+      console.log("Total width/height: ", screen.width + "*" + screen.height);
+      console.log("Available width/height: ", screen.availWidth + "*" + screen.availHeight);
+      console.log("Color depth: ", screen.colorDepth);
+      console.log("Color resolution: ", screen.pixelDepth);
+
+    
+
+ 
+
+    </script>
+    <style>
+        html {
+              min-height: 100%;
+              background-image: url(contactBGimage.png);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+              z-index: 1;
+        }
+       label{color: white;}
+       a{color: silver;}
+       h1{color: silver;}
+       input, textarea{font-size: 25px;}
+    </style>
+</head>
+<body>
+    <header> 
+        <div >
+                <ul id="menuList">
+                    <a href="index.html"><img src="HapFeetLogo.png" id="logoBox" height="80" width="80" alt="logo"></a> 
+                    <!-- <li><h1 id="CPh1">Contact Us</h1></li> -->
+                    <li><a href="index.html" id="hp">HOME</a></li>
+                    <li><a href="aboutPage.html" id="ap">ABOUT</a></li>
+                    <li><a href="walksPage.html" id="wp">OUR WALKS</a></li>
+                    <li><a href="supportPage.html" id="sp">SUPPORT</a></li> 
+                </ul>
+            </nav> <!-- End of navbar tag -->
+        </div>   
+    </header>
+
+    <main>
+    <br><br><br><br>
+    <h2 class="medSign">Please leave your details to join our next walk.</h2>
+    <h1  class="medSign">Message:</h1>
+    <textarea cols="40" rows="10">Our Next Walk is scheduled for: Sunday 10am: Meet-up at Mumps Bridge tram stop 4, Oldham Town Centre. </textarea>
+    <p></p>
+    <label for="fname">Name:</label><br>
+    <input type="text" id="fname" name="NAME" placeholder="Your name..">
+    <p></p>
+                            
+
+    <label for="emAdd">Email Address:</label><br>
+    <input type="email" id="emAdd" name="EMAILADDRES" placeholder="Your@Email..">
+                            <p></p>  
+
+    <input type="submit" onclick="boom();" id="CUsub">
+   
+    </main>
+    
+</body>
+</html>

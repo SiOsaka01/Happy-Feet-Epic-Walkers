@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homepage</title>
+	<link rel="stylesheet" href="newFrag1.css">
+	<script type="text/javascript">
+		function setIframeSource() {
+    var theSelect = document.getElementById('location');
+    var theIframe = document.getElementById('myIframe');
+    var theUrl;
+  
+    theUrl = theSelect.options[theSelect.selectedIndex].value;
+    theIframe.src = theUrl;
+ }
+
+function showDetails(){
+    const bt=document.getElementById("bt1").style.height;
+    alert(bt);
+ }
+
+function showMapper(){
+        var mapp=document.getElementById("latlongmape");
+        alert("This function is under Development! Sorry, buy a map and compass!");
+}
+
+function boom(){
+    alert("Thank you see you on Sunday.");
+}
+      console.log("Total width/height: ", screen.width + "*" + screen.height);
+      console.log("Available width/height: ", screen.availWidth + "*" + screen.availHeight);
+      console.log("Color depth: ", screen.colorDepth);
+      console.log("Color resolution: ", screen.pixelDepth);
+
+    
+
+ 
+
+	</script>
+</head>
+
+ <body style="background-color:lightgreen;"> 
+	<header> 
+        <div >
+                <ul id="menuList">
+                    	<a href="index.html"><img src="HapFeetLogo.png" id="logoBox" height="80" width="80" alt="logo"></a> 
+						<li><a href="aboutPage.html" target="_blank" id="ap">ABOUT</a></li>
+						<li><a href="walksPage.html" target="_blank" id="wp">OUR WALKS</a></li>
+						<li><a href="supportPage.html" target="_blank"  id="sp">SUPPORT</a></li>
+						<li><a href="contactPage.html" target="_blank" id="cp">CONTACT</a></li>
+				</ul>
+				
+		</div> 
+	</header>
+<!-- End of navbar area-->
+<br><br><br>
+	<main>
+		<h1 id="HPh1">Welcome to the <em>HAPPY-FEET Walking Group</em> Homepage</h1>
+		<h2 class="tsize pt">Our goal is to increase your wellbeing, by taking you on walks around Oldham.</h2>
+
+		<div>
+			<img src="res1.png" alt="DoveStone Reservior" id="bgpicHP" alt="Dovestones res pic"  title="View from Indian's Head at DoveStones Reservoir" width="100%"; height="500">
+			<img src="happ_Feet_logo2.png" id="cta5" name="cta5" alt="Test_image_cta5" onclick="window.location.href='contactPage.html'" tabindex="10" title="Click to join our next walk."  onMouseOver="document.cta5.src='happ_Feet_logo3.png'" onMouseOut="document.cta5.src='happ_Feet_logo2.png'">
+		</div>
+	</main>	
+	
+	<footer class="midbox">
+		<a href="https://www.facebook.com/groups/1768738856810053" id="footFB"><img src="fbimg.png" alt="Facebook icon" height="50" width="50" title="Facebook"></a>
+		<a href="https://business.facebook.com/latest/home?nav_ref=pages_you_manage_navigation&mio=0&asset_id=109382721976348&entry_exp=hpmgxkbfhl" id="footFB"><img src="fbsimg.png" alt="Meta Business icon" height="50" width="50" title="Meta business"></a>
+		<a href="https://www.instagram.com/simonosaka/" id="footIG"><img src="igimg.png" alt="Instagram icon" height="50" width="50" title="Instagram"></a>
+		<a href="https://www.linkedin.com/in/simon-osaka-81209a226" id="footLI"><img src="liimg.png" alt="LinkedIn icon" height="50" width="50" title="LinkedIn"></a>
+		<a href="https://www.tiktok.com/@user7059099431081?_t=8WzRD1mChs5&_r=1" id="footTT"><img src="ttimg.png" alt="TikTok icon" height="50" width="50" title="TikTok"></a>	
+	</footer>
+
+
+</body>
+</html>
